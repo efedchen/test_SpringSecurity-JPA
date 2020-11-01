@@ -8,7 +8,7 @@ public class HomeResource {
 
     @GetMapping("/")
     public String home() {
-        return ("<h1>Welcome</h1>");
+        return ("<h1>Welcome. Its home Page</h1>");
     }
 
     @GetMapping("/user")
@@ -19,5 +19,10 @@ public class HomeResource {
     @GetMapping("/admin")
     public String admin() {
         return ("<h1>Welcome Admin</h1>");
+    }
+
+    @GetMapping("/logout")
+    public String logout() {
+        return ("<h1>Logging out</h1>");
     }
 }
