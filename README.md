@@ -31,11 +31,11 @@ The application uses Spring Boot with Spring Security for login form creation an
 ```
 ##### MySQL Connector
 ```xml
-<dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-	<scope>runtime</scope>
-</dependency>
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <scope>runtime</scope>
+    </dependency>
 ```
 ### MySQL configuration
 Configurations are stored in `application.properties` file.  
@@ -48,4 +48,4 @@ spring.datasource.password=root
 Also you need to create table ``user`` in accordance with ``User`` class.
 For example:
 
-![User table configuration](https://github.com/efedchen/test_SpringSecurity-JPA/tree/media/src/main/resources/static/img/dbTableConf.png?raw=true "User table configuration")
+![User table configuration](https://github.com/efedchen/test_SpringSecurity-JPA/blob/media/src/main/resources/static/img/dbTableConf.png?raw=true "User table configuration")
